@@ -1,0 +1,21 @@
+HAPPY BOUTIQUE DE FESTAS
+
+Abra index.html no navegador para visualizar o site.
+O site é estático: HTML, CSS e JavaScript, sem instalação obrigatória.
+Para publicar na Vercel, use o preset Other, sem comando de build, diretório raiz como saída.
+
+config.js: nome, WhatsApp e opções do catálogo.
+styles.css: cores, layout, responsividade e animações.
+assets/: imagens recortadas dos prints fornecidos.
+
+O orçamento prepara uma mensagem para o WhatsApp. Não realiza pagamentos,
+não consulta estoque em tempo real e não confirma reservas.
+Valores, modelos e disponibilidade são consultados com a loja.
+As imagens das composições não significam que todos os elementos estão incluídos.
+Favoritos ficam salvos apenas no navegador. O orçamento fica na sessão da página.
+
+Contato extraído do print: (77) 98884-0101.
+Endereço: Rua Equador, 215, Jurema, Vitória da Conquista – BA.
+Instagram: @happyboutiquedefestas.
+
+Fontes online: Google Fonts, com alternativas locais se não houver conexão.

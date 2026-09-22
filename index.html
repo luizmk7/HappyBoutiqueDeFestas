@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ec871d">
+  <meta name="description" content="Happy Boutique de Festas: locação de móveis, painéis, bandejas e artigos para festas em Vitória da Conquista. Monte sua seleção e solicite um orçamento.">
+  <title>Happy Boutique de Festas | Sua festa começa aqui</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <a class="brand" href="#"><img src="https://res.cloudinary.com/lvl0nq3r/image/upload/v1790091423/happy_boutique_festas_arky2w.webp" onerror="this.onerror=null;this.src='assets/logo.svg';" alt="Happy Boutique de Festas" width="64" height="64" referrerpolicy="no-referrer"><span class="brand-sub">BOUTIQUE<br>DE FESTAS</span></a>
+    <nav>
+      <a href="#catalogo">Nosso acervo</a><a href="#sobre">A Happy</a>
+      <button id="favorites" aria-label="Ver favoritos" title="Meus favoritos" aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+      <button class="primary" id="open-cart">Meu orçamento <b id="count">0</b></button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="hero-content"><p class="eyebrow">LOCAÇÃO PARA FESTAS · VITÓRIA DA CONQUISTA</p>
+      <h1>Momentos felizes.<br><em>Detalhes que<br>ficam.</em></h1>
+      <p>Móveis, painéis e detalhes para celebrar do seu jeito.</p>
+      <a class="primary" href="#catalogo">Explorar o acervo <span>↗</span></a>
+      <a class="text-link" href="https://wa.me/5577988840101" target="_blank" rel="noopener">Conversar com a Happy</a>
+      <span class="hero-foot">Sua comemoração, com um toque de Happy.</span></div>
+      <div class="hero-media"><img src="https://res.cloudinary.com/lvl0nq3r/image/upload/v1790091211/imagem_convertida_1_bcqed3.webp" onerror="this.onerror=null;this.src='assets/hero.jpg';" alt="Composição de festa com mesas de madeira, flores brancas e folhagens do acervo Happy" fetchpriority="high" width="738" height="554" referrerpolicy="no-referrer"><div class="photo-label"><span>DO NOSSO ACERVO PARA SUA FESTA</span><b>Feito para celebrar.</b></div></div>
+    </section>
+    <div class="steps-container">
+      <div class="steps" id="steps-carousel" role="region" aria-label="Passo a passo para locação">
+        <div class="step-card" id="step-card-1"><b>01</b><span>Explore o acervo</span></div>
+        <div class="step-card" id="step-card-2"><b>02</b><span>Informe a data e o local</span></div>
+        <div class="step-card" id="step-card-3"><b>03</b><span>Solicite seu orçamento</span></div>
+      </div>
+      <div class="steps-indicator" aria-label="Navegação dos passos">
+        <button type="button" class="step-dot active" data-step="0" aria-label="Passo 1: Explore o acervo"></button>
+        <button type="button" class="step-dot" data-step="1" aria-label="Passo 2: Informe a data e o local"></button>
+        <button type="button" class="step-dot" data-step="2" aria-label="Passo 3: Solicite seu orçamento"></button>
+      </div>
+    </div>
+
+    <section id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PEÇAS QUE FAZEM A FESTA</p>
+          <h2>Sua festa começa<br><em>nos detalhes.</em></h2>
+        </div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <input id="search" type="search" placeholder="O que sua festa precisa?" aria-label="Buscar artigos">
+        </label>
+      </div>
+      <div id="categories" class="categories"></div>
+      <div class="catalog-meta">
+        <p id="result-count"></p>
+        <span>Disponibilidade e valores sob consulta</span>
+      </div>
+      <div id="grid" class="grid"></div>
+      <div id="empty" hidden>
+        <h3>Nenhuma opção por aqui.</h3>
+        <p>Experimente outra busca ou veja todas as opções.</p>
+        <button class="primary" id="reset">Ver tudo</button>
+      </div>
+    </section>
+
+    <section class="info" id="sobre">
+      <div class="about-photo"><img src="assets/about.jpg?v=2026_real" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=85';" width="738" height="918" loading="lazy" alt="Acervo e composições para celebrações especiais da Happy" referrerpolicy="no-referrer"></div>
+      <div class="about-content"><p class="eyebrow">PRAZER, SOMOS A HAPPY</p><h2>A gente adora<br>fazer parte dos seus<br><em>dias felizes.</em></h2><p>Peças e composições para os seus dias felizes, em Vitória da Conquista.</p><a class="primary" href="https://wa.me/5577988840101" target="_blank" rel="noopener">Falar com a Happy ↗</a></div>
+    </section>
+    <section class="visit"><p class="eyebrow">VENHA NOS CONHECER</p><h2>Seu próximo momento<br><em>feliz começa aqui.</em></h2><p>Rua Equador, 215 · Bairro Jurema<br>Vitória da Conquista – BA · CEP 45023-115</p><a class="secondary" href="https://www.google.com/maps/search/?api=1&query=Happy+Boutique+de+Festas+Rua+Equador+215+Vitoria+da+Conquista" target="_blank" rel="noopener">Como chegar ↗</a><a class="text-link" href="https://www.instagram.com/happyboutiquedefestas/" target="_blank" rel="noopener">Veja mais no Instagram ↗</a></section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><img src="https://res.cloudinary.com/lvl0nq3r/image/upload/v1790091423/happy_boutique_festas_arky2w.webp" onerror="this.onerror=null;this.src='assets/logo.svg';" alt="Happy Boutique de Festas" width="64" height="64" referrerpolicy="no-referrer"><span class="brand-sub">BOUTIQUE<br>DE FESTAS</span></a>
+    <p>Vitória da Conquista · Bahia</p>
+    <div class="footer-contact"><a href="https://www.instagram.com/happyboutiquedefestas/" target="_blank" rel="noopener">@happyboutiquedefestas</a><a href="https://wa.me/5577988840101" target="_blank" rel="noopener">(77) 98884-0101</a></div>
+  </footer>
+
+  <aside id="floating" class="bottom-bar" hidden aria-label="Resumo do orçamento">
+    <div class="bottom-bar-inner">
+      <div class="bottom-bar-info">
+        <div class="bottom-bar-pill">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span id="floating-items-text"><b id="floating-count">1</b> item no orçamento</span>
+        </div>
+        <div class="bottom-bar-val">
+          <small>Valores</small>
+          <strong id="floating-total">R$ 0,00</strong>
+        </div>
+      </div>
+      <button type="button" class="bottom-bar-action" id="floating-btn" aria-label="Ir para o orçamento">
+        <span>Ver orçamento</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <dialog id="cart">
+    <div class="dialog-head">
+      <div>
+        <p class="eyebrow">VAMOS PLANEJAR SUA FESTA</p>
+        <h2>Meu orçamento</h2>
+      </div>
+      <button class="close" data-close="cart" aria-label="Fechar orçamento">×</button>
+    </div>
+    <div id="cart-items"></div>
+    <form id="quote-form">
+      <div class="fields">
+        <label>Seu nome
+          <input id="name" required maxlength="80" autocomplete="name" placeholder="Como podemos te chamar?">
+        </label>
+        <label>Tipo de evento
+          <select id="event">
+            <option>Aniversário</option>
+            <option>Casamento</option>
+            <option>Evento corporativo</option>
+            <option>Chá de bebê</option>
+            <option>Outro evento</option>
+          </select>
+        </label>
+        <label>Data do evento / retirada
+          <input id="start" type="date" required>
+        </label>
+        <label>Devolução
+          <input id="end" type="date" required>
+        </label>
+        <label class="full">Cidade e local do evento
+          <input id="location" required maxlength="180" placeholder="Ex.: Vitória da Conquista, bairro e espaço">
+        </label>
+        <label>Logística
+          <select id="delivery">
+            <option>Quero consultar entrega e retirada</option>
+            <option>Vou retirar e devolver</option>
+          </select>
+        </label>
+        <label>Número de convidados
+          <input id="guests" type="number" min="1" max="100000" step="1" placeholder="Opcional">
+        </label>
+        <label class="full">Observações
+          <textarea id="notes" rows="2" maxlength="600" placeholder="Tema, cores, horários e outros detalhes..."></textarea>
+        </label>
+      </div>
+      <div class="summary">
+        <div>
+          <span id="days">1 diária estimada</span>
+          <strong id="total">Sob consulta</strong>
+        </div>
+        <p>O valor é personalizado conforme o tema, as peças, a montagem e o local. Envie sua seleção para receber um orçamento.</p>
+      </div>
+      <button class="primary wide" id="preview" type="submit">Conferir solicitação</button>
+      <p class="note">A seleção não bloqueia estoque nem confirma uma reserva.</p>
+    </form>
+  </dialog>
+
+  <dialog id="detail">
+    <button class="close" data-close="detail" aria-label="Fechar detalhes">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+
+  <dialog id="message">
+    <button class="close" data-close="message" aria-label="Fechar mensagem">×</button>
+    <p class="eyebrow">TUDO PRONTO PARA CONSULTAR</p>
+    <h2>Sua solicitação</h2>
+    <pre id="message-text"></pre>
+    <p id="contact-note" class="note"></p>
+    <div class="message-actions">
+      <button class="primary" id="send">Abrir WhatsApp</button>
+      <button class="secondary" id="copy">Copiar solicitação</button>
+    </div>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
